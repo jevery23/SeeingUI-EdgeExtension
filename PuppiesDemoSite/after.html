@@ -63,19 +63,27 @@
     <div id="errorMsg" role="alert"></div>
 
     <main role="main">
-      <div role="region" aria-describedby="carouselHeading">
+      <h2 id="carouselHeading" class="clipped">Hi, I’m Jack</h2>
+      <img src="images/jack.jpg" alt="Jack is an adorable, if sleepy, golden retriever." />
+      
+      <h2>Facts About Me</h2>
+      <dl>
+        <dt>Breed</dt><dd>Golden Retriever</dd>
+        <dt>Color</dt><dd>White</dd>
+        <dt>Age</dt><dd>Adult</dd>
+        <dt>Size</dt><dd>63 lbs</dd>
+        <dt>Sex</dt><dd>Male</dd>
+        <dt>Pet ID</dt><dd>123456789</dd>
+      </dl>
 
-        <h2 id="carouselHeading" class="clipped">Featured Pup</h2>
-        <!-- not using a list for slides since only one slide is visible at a time -->
-        <!-- therefore, screen readers announce "list of one item", potentially confusing -->
-        <div>
-          <img src="images/jack.jpg"
-            alt="Jack is an adorable, sleepy golden retriever." />
-          <div class="description">
-            Jack is looking for a new home today!
-          </div>
-        </div>
-      </div>
+      <h2>My Info</h2>
+      <ul class="delist">
+        <li><span class="myinfo__icon myinfo__icon--tick"></span><b class="clipped">I’m</b> Neutered</li>
+        <li><span class="myinfo__icon myinfo__icon--tick"></span><b class="clipped">My</b> Shots <b class="clipped">are</b> Up to Date</li>
+        <li><span class="myinfo__icon myinfo__icon--tick"></span><b class="clipped">I’m</b> House-trained</li>
+        <li><span class="myinfo__icon myinfo__icon--exclamation"></span><b class="clipped">I’m</b> Not Good with Cats</li>
+        <li><span class="myinfo__icon myinfo__icon--tick"></span><b class="clipped">I’m</b> Good with Kids</li>
+      </ul>
       
     </main>
 
@@ -134,8 +142,7 @@
       <div id="ccLogo">
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
       </div>
-      Accessible University by <a href="http://washington.edu/accesscomputing/AU">University of Washington</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-      <p>This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.</p>
+      <p>This is a fictional demo. Feel free to learn from it.</p>
     </footer>
 
   </div><!--end #content-->
