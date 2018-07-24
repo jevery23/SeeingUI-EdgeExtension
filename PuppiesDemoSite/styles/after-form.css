@@ -10,7 +10,8 @@ form h2 {
   font-weight: bold;
   font-size: 1.2em;
 }
-form input[type="email"] {
+form input[type="email"],
+form input[type="tel"] {
   display: block;
   width: 95%;
 }
@@ -23,7 +24,7 @@ legend {
   margin-left: 0;
   font-weight: bold;
 }
-#majors ul {
+#animals ul {
   list-style-type: none;
   display: block;
 	position: relative;
@@ -31,13 +32,9 @@ legend {
 	padding-left: 0;
 	width: 10em;
 }
-#majors li input {
-  float: right;
-	position: absolute;
-	right: 0;
-}
 .required {
   font-weight: bold;
+  color: #39275B;
 }
 
 /*
