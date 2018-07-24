@@ -79,3 +79,22 @@ img.hr {
   margin: 1em 0;
 }
 
+.myinfo__icon {
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  width: 1rem;
+  height: 12px;
+  height: .75rem;
+}
+.myinfo__icon--tick {
+  background: url(data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2216px%22%20height%3D%221…%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-position: 96% center;
+}
+.myinfo__icon--exclamation {
+  background: url(data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%224px%22%20height%3D%2217…%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 17px;
+}
