@@ -43,6 +43,11 @@
   margin: 0.75em 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*
  * Uses color alone to communicate "link"
  *
