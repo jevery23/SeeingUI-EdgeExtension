@@ -203,7 +203,8 @@
 
     <div id="appForm" role="form" aria-labelledby="appFormHeading">
 
-      <h2 id="appFormHeading">Adopt Henry now!</h2>
+      <h2 id="appFormHeading">Adopt now!</h2>
+      <p class="required reqExample">(required fields are in blue)</p>
 
       <form action="after.html?submitted=yes" method="post">
 
@@ -211,64 +212,42 @@
         <div id="feedback" role="alert"></div>
 
         <div class="required">
-          <label for="name">Name: (required)</label>
-          <input id="name" type="text" name="name" required/>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" required aria-required="true"/>
         </div>
         <div class="required">
-          <label for="email">Email: (required)</label>
-          <input id="email" type="email" name="email" required/>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required aria-required="true"/>
         </div>
         <div>
-          <label for="city">City:</label>
-          <input type="text" name="city" id="city"/>
-        </div>
-        <div>
-          <label for="state">State/Province:</label>
-          <input type="text" name="state" id="state"/>
-        </div>
-        <div>
-          <label for="zip">Zip/Postal Code:</label>
-          <input type="text" name="zip" id="zip"/>
-        </div>
-        <div>
-          <label for="country">Country:</label>
-          <input type="text" name="country" id="country"/>
+          <label for="tel">Phone:</label>
+          <input type="tel" name="tel" id="tel"/>
         </div>
 
-        <fieldset id="majors">
-          <legend>desired animals(s):</legend>
+        <fieldset id="animals">
+          <legend>Desired animal:</legend>
           <ul>
             <li>
-              <label for="cs">Computer Science</label>
-              <input type="checkbox" name="major_cs" id="cs"/>
+              <input type="radio" name="animal" id="Bo" value="Bo"/>
+              <label for="Bo">Bo</label>
             </li>
             <li>
-              <label for="eng">Engineering</label>
-              <input type="checkbox" name="major_eng" id="eng"/>
+              <input type="radio" name="animal" id="Jeanie" value="Jeanie"/>
+              <label for="Jeanie">Jeanie</label>
             </li>
             <li>
-              <label for="eco">Economics</label>
-              <input type="checkbox" name="major_econ" id="eco"/>
+              <input type="radio" name="animal" id="Sparkleby" value="Sparkleby"/>
+              <label for="Sparkleby">Sparkleby</label>
             </li>
             <li>
-              <label for="phy">Physics</label>
-              <input type="checkbox" name="major_phy" id="phy"/>
-            </li>
-            <li>
-              <label for="psy">Psychology</label>
-              <input type="checkbox" name="major_psy" id="psy"/>
-            </li>
-            <li>
-              <label for="spa">Spanish</label>
-              <input type="checkbox" name="major_sp" id="spa"/>
-            </li>
+              <input type="radio" name="animal" id="Nargalzius" value="Nargalzius"/>
+              <label for="Nargalzius">Nargalzius</label>
+            </li>            
           </ul>
         </fieldset>
 
-        <div id="captcha"></div>
-
         <div>
-          <input id="submit" type="submit" name="submit" value="Submit" />
+          <input id="submit" type="submit" name="submit" value="Submit my Adoption Application" />
         </div>
       </form>
     </div>
@@ -282,37 +261,6 @@
     </footer>
 
   </div><!--end #content-->
-
-  <!-- container for displaying form errors -->
-  <div id="error" role="alert"></div>
-
-  <!--containers for displaying modal content-->
-  <div id="modalMask"></div>
-  <div id="modalContent" role="dialog" aria-labelledby="modalHeading">
-    <h1 id="modalHeading">Eighteen Accessibility Issues</h1>
-    <button type="button" id="modalXButton" aria-label="Close dialog">x</button>
-    <ol>
-      <li>No headings</li>
-      <li>No alternate text on informative images</li>
-      <li>Missing or excessive alternate text on decorative images</li>
-      <li>Insufficient color contrast</li>
-      <li>Inaccessible dropdown menu</li>
-      <li>Insufficient visual cues</li>
-      <li>Redundant, uninformative link text</li>
-      <li>Color used to communicate information</li>
-      <li>Language not specified</li>
-      <li>Missing accessible form markup</li>
-      <li>Inaccessible CAPTCHA</li>
-      <li>Inaccessible validation</li>
-      <li>Missing ARIA landmark roles</li>
-      <li>Inaccessible modal window</li>
-      <li>Inaccessible carousel</li>
-      <li>Missing accessible table markup</li>
-      <li>Missing abbreviation tags</li>
-      <li>HTML fails validation</li>
-    </ol>
-    <button type="button" id="modalOkButton">OK</button>
-  </div>
 
 </body>
 </html>

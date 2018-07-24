@@ -14,16 +14,16 @@
 #appForm p.reqExample {
   margin-top: 0.15em;
 }
-div#majors {
+div#animals {
   width: 10em;
 }
-form div.major {
+form div.animal {
   display: block;
 	position: relative;
 	margin: 0;
 	width: 10em;
 }
-.major input {
+.animal input {
   float: right;
 	position: absolute;
 	right: 0;

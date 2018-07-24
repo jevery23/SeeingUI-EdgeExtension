@@ -166,8 +166,8 @@
 
     <div id="appForm">
 
-      <div class="heading">Adopt Henry now!</div>
-        <p class="required reqExample">(required fields are in blue)</p>
+      <div class="heading">Adopt now!</div>
+      <p class="required reqExample">(required fields are in blue)</p>
 
       <form action="#" method="post">
 
@@ -185,45 +185,21 @@
         </div>
 
         <div>
-          City:
-          <input type="text" name="city"/>
+          Phone:
+          <input type="text" name="tel"/>
+        </div>
+
+        <div><b>Desired animal:</b></div>
+
+        <div id="animals">
+          <div class="animal">Bo <input type="radio" name="animal" value="Bo"/></div>
+          <div class="animal">Jeanie <input type="radio" name="animal" value="Jeanie"/></div>
+          <div class="animal">Sparkleby <input type="radio" name="animal" value="Sparkleby"/></div>
+          <div class="animal">Nargalzius <input type="radio" name="animal" value="Nargalzius"/></div>
         </div>
 
         <div>
-          State/Province:
-          <input type="text" name="state"/>
-        </div>
-
-        <div>
-          Zip/Postal Code:
-          <input type="text" name="zip"/>
-        </div>
-
-        <div>
-          Country:
-          <input type="text" name="country"/>
-        </div>
-
-        <div><b>desired animals(s):</b></div>
-
-        <div id="majors">
-          <div class="major">Computer Science <input type="checkbox" name="major_cs"/></div>
-          <div class="major">Engineering <input type="checkbox" name="major_eng"/></div>
-          <div class="major">Economics <input type="checkbox" name="major_econ"/></div>
-          <div class="major">Physics <input type="checkbox" name="major_phy"/></div>
-          <div class="major">Psychology <input type="checkbox" name="major_psy"/></div>
-          <div class="major">Spanish <input type="checkbox" name="major_sp"/></div>
-        </div>
-
-        <div id="captcha">
-          <b>Security Test</b>
-          <p>Please enter the two words you see below, separated by a space</p>
-          <input type="text" name="captcha">
-          <img src="images/captcha.png">
-        </div>
-
-        <div>
-          <input id="submit" type="submit" name="submit" value="Submit" />
+          <input id="submit" type="submit" name="submit" value="Submit my Adoption Application" />
         </div>
 
       </form>
@@ -239,34 +215,6 @@
     </div>
 
   </div><!--end #content-->
-
-  <!--containers for displaying modal content-->
-  <div id="modalMask"></div>
-  <div id="modalContent">
-    <div class="modalHeading">Eighteen Accessibility Issues</div>
-    <button type="button" id="modalXButton">x</button>
-    <ol>
-      <li>No headings</li>
-      <li>No alternate text on informative images</li>
-      <li>Missing or excessive alternate text on decorative images</li>
-      <li>Insufficient color contrast</li>
-      <li>Inaccessible dropdown menu</li>
-      <li>Insufficient visual cues</li>
-      <li>Redundant, uninformative link text</li>
-      <li>Color used to communicate information</li>
-      <li>Language not specified</li>
-      <li>Missing accessible form markup</li>
-      <li>Inaccessible CAPTCHA</li>
-      <li>Inaccessible validation</li>
-      <li>Missing ARIA landmark roles</li>
-      <li>Inaccessible modal window</li>
-      <li>Inaccessible carousel</li>
-      <li>Missing accessible table markup</li>
-      <li>Missing abbreviation tags</li>
-      <li>HTML fails validation</li>
-    </ol>
-    <button type="button" id="modalOkButton">OK</button>
-  </div>
 
 </body>
 </html>
