@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- add meta to prevent IE9+ from rendering page in IE7 mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=100">
+	<title>Accessible University Demo Site - Accessible Version</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/after-main.css" rel="stylesheet">
+	<link href="styles/after-menu.css" rel="stylesheet">
+	<link href="styles/after-form.css" rel="stylesheet">
+	<link href="styles/after-modal.css" rel="stylesheet">
+	<link href="styles/after-carousel.css" rel="stylesheet">
+  <script src="scripts/jquery-1.11.3.min.js"></script>
+	<script src="scripts/after-menu.js"></script>
+	<script src="scripts/after-form.js"></script>
+	<script src="scripts/after-modal.js"></script>
+	<script src="scripts/after-carousel.js"></script>
+</head>
+<body>
+
+  <div id="content">
+
+    <header role="banner">
+	    <h1>
+  	    <img id="logo" src="images/au123456789.png" alt="Accessible University" height="90"/>
+      </h1>
+    </header>
+
+    <nav id="main-nav" role="navigation" aria-label="Main Menu">
+      <ul id="menu" data-able-menu role="menubar">
+        <li>
+          <a href="somepage.html?ref=About" role="menuitem">About</a>
+          <ul role="menu">
+            <li>
+              <a role="menuitem" href="somepage.html?ref=News">News</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Governance">Governance</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Diversity">Diversity</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Contact%20Us">Contact Us</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="somepage.html?ref=Academics">Academics</a>
+          <ul role="menu">
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Degree%20Programs">Degree Programs</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=AU%20Faculty">AU Faculty</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Distance%20Learning">Distance Learning</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Libraries">Libraries</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a role="menuitem" href="somepage.html?ref=Admissions">Admissions</a>
+          <ul role="menu">
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Undergraduate">Undergraduate</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Graduate">Graduate</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Tuition">Tuition</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Financial%20Aid">Financial Aid</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a role="menuitem" href="somepage.html?ref=Visitors">Visitors</a>
+          <ul role="menu">
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Events">Events</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Campus_Map">Campus Map</a>
+            </li>
+            <li>
+              <a role="menuitem" href="somepage.html?ref=Parking">Parking</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+<!--
+	empty message div, will be populated dynamically
+	and its contents will be announced to screen reader users thanks to role="alert"
+-->
+    <div id="errorMsg" role="alert"></div>
+
+    <main role="main">
+
+      <div id="carousel" role="region" aria-describedby="carouselHeading">
+        <h2 id="carouselHeading" class="clipped">Featured Story Slideshow</h2>
+        <!-- not using a list for slides since only one slide is visible at a time -->
+        <!-- therefore, screen readers announce "list of one item", potentially confusing -->
+        <div class="slide">
+          <img src="images/slide3.jpg"
+            alt="Robot with a friendly face, assembled with various scraps of hardware, and mounted on an old DecTalk speech synthesizer" />
+          <div class="description">
+            AU student wins engineering award for talking robot sign language interpreter.
+            Read more about the <a href="somepage.html?ref=Slide%201">student's engineering award</a>.
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/slide3.jpg" alt="A large bronze tactile map with a speaker for audio output"/>
+          <div class="description">
+            AU installs universally designed maps at multiple locations on campus.
+            See all <a href="somepage.html?ref=Slide%201">campus map locations</a>.
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/slide3.jpg" alt="Braille dots embossed into the top of an aluminum beer can" />
+          <div class="description">
+            Group of AU students successfully advocates for Braille on beer cans.
+            Read more about <a href="somepage.html?ref=Slide%201">Braille and beer</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Welcome!</h2>
+        <p>Accessible University (AU) is a fictional university, and this is its
+          fictional home page. This page is designed to demonstrate a variety of
+          common web design problems that result in visitors with disabilities
+          being unable to access the content or features of a web page.
+          Although the heading at the top of this section of the page
+          suggests that AU may be a welcoming institution,
+          the inaccessible design of this page sends the opposite message.
+        </p>
+      </div>
+
+      <div class="section" lang="es">
+        <h2>Bienvenido!</h2>
+        <p lang="es">Accesible Universidad (UA) es una universidad ficticia, y esta es su
+          página de ficción. Esta página está diseñada para demostrar una variedad de
+          común de diseño web que se traducen en problemas de los visitantes con discapacidad
+          no poder acceder al contenido o las características de una página web.
+          Aunque el título en la parte superior de esta sección de la página
+          sugiere que AU puede ser una institución de bienvenida,
+          el diseño inaccesible de esta página envía el mensaje opuesto.
+	      </p>
+      </div>
+
+      <div class="section">
+        <h2>Can you spot the barriers?</h2>
+        <p>This page is an improved version, with 18 accessibility issues corrected.
+          Details about all known issues are on the <a href="issues.html">List of Issues</a> page.
+          To see the original issues, consult the <a href="before.html">Inaccessible version</a>.
+          See also our <a href="cheatsheet.html">Cheat Sheet of Accessibility Issues</a>.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>AU Enrollment Trends</h2>
+
+        <!-- in HTML4 could have used the <table> summary attribute. No longer valid in HTML5 -->
+        <div id="table-summary" class="clipped">
+          This table shows enrollment over a two-year period by subject and gender.
+          The academic years 2007-08 and 2008-09 are arranged in columns,
+          with six subjects arranged as columns nested within the year columns.
+          Total enrollment, and male and female enrollment percentages, are arranged in rows.
+        </div>
+
+        <table id="enrollment" aria-describedby="table-summary">
+          <caption class="clipped">AU Enrollment Trends</caption>
+          <thead>
+            <tr>
+              <td style="width:6em">&nbsp;</td>
+              <th scope="col" id="y07-08" colspan="6">2007-08</th>
+              <th scope="col" id="y08-09" colspan="6">2008-09</th>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <th scope="col" id="subj-cs1"><abbr title="Computer Science">CS</abbr></th>
+              <th scope="col" id="subj-eng1"><abbr title="English">Eng</abbr></th>
+              <th scope="col" id="subj-eco1"><abbr title="Economics">Eco</abbr></th>
+              <th scope="col" id="subj-phy1"><abbr title="Physics">Phy</abbr></th>
+              <th scope="col" id="subj-psy1"><abbr title="Psychology">Psy</abbr></th>
+              <th scope="col" id="subj-spa1"><abbr title="Spanish">Spa</abbr></th>
+              <th scope="col" id="subj-cs2"><abbr title="Computer Science">CS</abbr></th>
+              <th scope="col" id="subj-eng2"><abbr title="English">Eng</abbr></th>
+              <th scope="col" id="subj-eco2"><abbr title="Economics">Eco</abbr></th>
+              <th scope="col" id="subj-phy2"><abbr title="Physics">Phy</abbr></th>
+              <th scope="col" id="subj-psy2"><abbr title="Psychology">Psy</abbr></th>
+              <th scope="col" id="subj-spa2"><abbr title="Spanish">Spa</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="total">Total</th>
+              <!--2007-08 data-->
+              <td headers="y07-08 subj-cs1 total">84</td>
+              <td headers="y07-08 subj-eng1 total">126</td>
+              <td headers="y07-08 subj-eco1 total">43</td>
+              <td headers="y07-08 subj-phy1 total">32</td>
+              <td headers="y07-08 subj-psy1 total">112</td>
+              <td headers="y07-08 subj-spa1 total">59</td>
+              <!--2008-09 data-->
+              <td headers="y08-09 subj-cs2 total">82</td>
+              <td headers="y08-09 subj-eng2 total">140</td>
+              <td headers="y08-09 subj-eco2 total">45</td>
+              <td headers="y08-09 subj-phy2 total">34</td>
+              <td headers="y08-09 subj-psy2 total">101</td>
+              <td headers="y08-09 subj-spa2 total">64</td>
+            </tr>
+            <tr>
+              <th scope="row" id="male">% Male</th>
+              <!--2007-08 data-->
+              <td headers="y07-08 subj-cs1 male">89</td>
+              <td headers="y07-08 subj-eng1 male">84</td>
+              <td headers="y07-08 subj-eco1 male">73</td>
+              <td headers="y07-08 subj-phy1 male">69</td>
+              <td headers="y07-08 subj-psy1 male">20</td>
+              <td headers="y07-08 subj-spa1 male">47</td>
+              <!--2008-09 data-->
+              <td headers="y08-09 subj-cs2 male">87</td>
+              <td headers="y08-09 subj-eng2 male">80</td>
+              <td headers="y08-09 subj-eco2 male">69</td>
+              <td headers="y08-09 subj-phy2 male">69</td>
+              <td headers="y08-09 subj-psy2 male">22</td>
+              <td headers="y08-09 subj-spa2 male">48</td>
+            </tr>
+            <tr>
+              <th scope="row" id="female">% Female</th>
+              <!--2007-08 data-->
+              <td headers="y07-08 subj-cs1 female">11</td>
+              <td headers="y07-08 subj-eng1 female">16</td>
+              <td headers="y07-08 subj-eco1 female">27</td>
+              <td headers="y07-08 subj-phy1 female">31</td>
+              <td headers="y07-08 subj-psy1 female">80</td>
+              <td headers="y07-08 subj-spa1 female">53</td>
+              <!--2007-08 data-->
+              <td headers="y08-09 subj-cs2 female">13</td>
+              <td headers="y08-09 subj-eng2 female">20</td>
+              <td headers="y08-09 subj-eco2 female">31</td>
+              <td headers="y08-09 subj-phy2 female">31</td>
+              <td headers="y08-09 subj-psy2 female">78</td>
+              <td headers="y08-09 subj-spa2 female">52</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div id="appForm" role="form" aria-labelledby="appFormHeading">
+
+      <h2 id="appFormHeading">Adopt Henry now!</h2>
+
+      <form action="after.html?submitted=yes" method="post">
+
+        <!-- container for displaying form errors or other messages -->
+        <div id="feedback" role="alert"></div>
+
+        <div class="required">
+          <label for="name">Name: (required)</label>
+          <input id="name" type="text" name="name" required/>
+        </div>
+        <div class="required">
+          <label for="email">Email: (required)</label>
+          <input id="email" type="email" name="email" required/>
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city"/>
+        </div>
+        <div>
+          <label for="state">State/Province:</label>
+          <input type="text" name="state" id="state"/>
+        </div>
+        <div>
+          <label for="zip">Zip/Postal Code:</label>
+          <input type="text" name="zip" id="zip"/>
+        </div>
+        <div>
+          <label for="country">Country:</label>
+          <input type="text" name="country" id="country"/>
+        </div>
+
+        <fieldset id="majors">
+          <legend>desired animals(s):</legend>
+          <ul>
+            <li>
+              <label for="cs">Computer Science</label>
+              <input type="checkbox" name="major_cs" id="cs"/>
+            </li>
+            <li>
+              <label for="eng">Engineering</label>
+              <input type="checkbox" name="major_eng" id="eng"/>
+            </li>
+            <li>
+              <label for="eco">Economics</label>
+              <input type="checkbox" name="major_econ" id="eco"/>
+            </li>
+            <li>
+              <label for="phy">Physics</label>
+              <input type="checkbox" name="major_phy" id="phy"/>
+            </li>
+            <li>
+              <label for="psy">Psychology</label>
+              <input type="checkbox" name="major_psy" id="psy"/>
+            </li>
+            <li>
+              <label for="spa">Spanish</label>
+              <input type="checkbox" name="major_sp" id="spa"/>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div id="captcha"></div>
+
+        <div>
+          <input id="submit" type="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <footer role="contentinfo">
+      <div id="ccLogo">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      </div>
+      Accessible University by <a href="http://washington.edu/accesscomputing/AU">University of Washington</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      <p>This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.</p>
+    </footer>
+
+  </div><!--end #content-->
+
+  <!-- container for displaying form errors -->
+  <div id="error" role="alert"></div>
+
+  <!--containers for displaying modal content-->
+  <div id="modalMask"></div>
+  <div id="modalContent" role="dialog" aria-labelledby="modalHeading">
+    <h1 id="modalHeading">Eighteen Accessibility Issues</h1>
+    <button type="button" id="modalXButton" aria-label="Close dialog">x</button>
+    <ol>
+      <li>No headings</li>
+      <li>No alternate text on informative images</li>
+      <li>Missing or excessive alternate text on decorative images</li>
+      <li>Insufficient color contrast</li>
+      <li>Inaccessible dropdown menu</li>
+      <li>Insufficient visual cues</li>
+      <li>Redundant, uninformative link text</li>
+      <li>Color used to communicate information</li>
+      <li>Language not specified</li>
+      <li>Missing accessible form markup</li>
+      <li>Inaccessible CAPTCHA</li>
+      <li>Inaccessible validation</li>
+      <li>Missing ARIA landmark roles</li>
+      <li>Inaccessible modal window</li>
+      <li>Inaccessible carousel</li>
+      <li>Missing accessible table markup</li>
+      <li>Missing abbreviation tags</li>
+      <li>HTML fails validation</li>
+    </ol>
+    <button type="button" id="modalOkButton">OK</button>
+  </div>
+
+</body>
+</html>
