@@ -77,18 +77,21 @@
       var subMenuId = thisObj.idPrefix + '_sub_' + thisObj.menuItemId;
       thisObj.menuItemId++;
 
-      // add ARIA attributes
-      $item.attr({
-        'id': itemId,
-        'aria-owns': subMenuId,
-        'aria-controls': subMenuId,
-        'aria-haspopup': 'true',
-        'aria-expanded': 'false'
-      })
-      $subMenu.attr({
-        'id': subMenuId,
-        'aria-labelledby': itemId
-      })
+      if ($subMenu.length > 0) {
+        // add ARIA attributes
+        $item.attr({
+          'id': itemId,
+          'aria-owns': subMenuId,
+          'aria-controls': subMenuId,
+          'aria-haspopup': 'true',
+          'aria-expanded': 'false'
+        });
+        $subMenu.attr({
+          'id': subMenuId,
+          'aria-labelledby': itemId
+        });
+
+      }
 
       // bind events to each menu item
       $(this)
