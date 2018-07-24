@@ -24,76 +24,34 @@
 
     <header role="banner">
 	    <h1>
-  	    <img id="logo" src="images/au123456789.png" alt="Accessible University" height="90"/>
+  	    <img id="logo" src="images/au123456789.png" alt="Awesome Animal Adoptions" height="90"/>
       </h1>
     </header>
 
     <nav id="main-nav" role="navigation" aria-label="Main Menu">
       <ul id="menu" data-able-menu role="menubar">
         <li>
-          <a href="somepage.html?ref=About" role="menuitem">About</a>
+          <a href="somepage.html?ref=About" role="menuitem">Animals</a>
           <ul role="menu">
             <li>
-              <a role="menuitem" href="somepage.html?ref=News">News</a>
+              <a role="menuitem" href="somepage.html?ref=News">Dogs</a>
             </li>
             <li>
-              <a role="menuitem" href="somepage.html?ref=Governance">Governance</a>
+              <a role="menuitem" href="somepage.html?ref=Governance">Cats</a>
             </li>
             <li>
-              <a role="menuitem" href="somepage.html?ref=Diversity">Diversity</a>
+              <a role="menuitem" href="somepage.html?ref=Diversity">Goats</a>
             </li>
             <li>
-              <a role="menuitem" href="somepage.html?ref=Contact%20Us">Contact Us</a>
+              <a role="menuitem" href="somepage.html?ref=Contact%20Us">Platypi</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="somepage.html?ref=Academics">Academics</a>
-          <ul role="menu">
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Degree%20Programs">Degree Programs</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=AU%20Faculty">AU Faculty</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Distance%20Learning">Distance Learning</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Libraries">Libraries</a>
-            </li>
-          </ul>
+          <a role="menuitem" href="somepage.html?ref=Academics">Adoption Criteria</a>
         </li>
         <li>
-          <a role="menuitem" href="somepage.html?ref=Admissions">Admissions</a>
-          <ul role="menu">
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Undergraduate">Undergraduate</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Graduate">Graduate</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Tuition">Tuition</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Financial%20Aid">Financial Aid</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a role="menuitem" href="somepage.html?ref=Visitors">Visitors</a>
-          <ul role="menu">
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Events">Events</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Campus_Map">Campus Map</a>
-            </li>
-            <li>
-              <a role="menuitem" href="somepage.html?ref=Parking">Parking</a>
-            </li>
-          </ul>
+          <a role="menuitem" href="somepage.html?ref=Visitors">Contact us</a>
         </li>
       </ul>
     </nav>
@@ -105,34 +63,18 @@
     <div id="errorMsg" role="alert"></div>
 
     <main role="main">
+      <div role="region" aria-describedby="carouselHeading">
 
-      <div id="carousel" role="region" aria-describedby="carouselHeading">
         <h2 id="carouselHeading" class="clipped">Featured Story Slideshow</h2>
         <!-- not using a list for slides since only one slide is visible at a time -->
         <!-- therefore, screen readers announce "list of one item", potentially confusing -->
-        <div class="slide">
+        <div>
           <img src="images/slide3.jpg"
-            alt="Robot with a friendly face, assembled with various scraps of hardware, and mounted on an old DecTalk speech synthesizer" />
+            alt="Henry the adorable puppy, frolicking in the grass." />
           <div class="description">
-            AU student wins engineering award for talking robot sign language interpreter.
-            Read more about the <a href="somepage.html?ref=Slide%201">student's engineering award</a>.
+            Henry will be available for adoption in three weeks!
           </div>
-        </div>
-        <div class="slide">
-          <img src="images/slide3.jpg" alt="A large bronze tactile map with a speaker for audio output"/>
-          <div class="description">
-            AU installs universally designed maps at multiple locations on campus.
-            See all <a href="somepage.html?ref=Slide%201">campus map locations</a>.
-          </div>
-        </div>
-        <div class="slide">
-          <img src="images/slide3.jpg" alt="Braille dots embossed into the top of an aluminum beer can" />
-          <div class="description">
-            Group of AU students successfully advocates for Braille on beer cans.
-            Read more about <a href="somepage.html?ref=Slide%201">Braille and beer</a>.
-          </div>
-        </div>
-      </div>
+        </div></div>
 
       <div class="section">
         <h2>Welcome!</h2>
