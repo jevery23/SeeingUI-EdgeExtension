@@ -5,7 +5,10 @@
     "description": "An AI model that when shown web pages fills in blanks in the UIA tree that the developer of the web page did not fill in, in the scenario of form filling.",
     "browser_action": {
         "default_title": "Eye for A11y",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "40": "images/seeing-ui-40.png"
+        }
     },
     "content_scripts": [
         {
@@ -19,5 +22,8 @@
     "background": {
         "scripts": [ "background.js" ],
         "persistent": true
+    },
+    "icons": {
+        "48": "images/seeing-ui-48.png"
     }
 }
