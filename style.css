@@ -6,9 +6,38 @@
 h1 {
     font-weight: 600;
     font-size: .9em;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
 }
 
 a {
     font-weight: 600;
     font-size: .8em;
+}
+
+body {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+#swapPageContent, #resetToOriginal {
+    grid-column: 1;
+    font-size: 12px;
+}
+
+#swapPageContent {
+    grid-row: 2;
+}
+
+#resetToOriginal {
+    grid-row: 3;
+}
+
+#moreInfoLink {
+    grid-column: 1;
+    grid-row: 4;
 }
