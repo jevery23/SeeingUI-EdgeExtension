@@ -1,4 +1,4 @@
--Design Eye for A11y-
+-Seeing UI-
 
 OneWeek Hackathon 2018 project: https://garagehackbox.azurewebsites.net/hackathons/1214/projects/70460
 
